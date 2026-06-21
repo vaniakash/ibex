@@ -1,0 +1,336 @@
+// Central trek data — served statically during dev.
+// In production, swap with API calls to /api/treks
+
+export const TREKS = [
+  {
+    _id: '1',
+    slug: 'kedarkantha',
+    name: 'Kedarkantha',
+    region: 'Uttarakhand',
+    state: 'Uttarakhand',
+    difficulty: 'Easy',
+    duration: 6,
+    maxAltitude: 3950,
+    maxAltitudeFt: 12966,
+    price: 8500,
+    featured: true,
+    shortDesc: 'A perfect winter summit offering 360° views of Himalayan giants from Swargarohini to Ranglana.',
+    description: 'Kedarkantha is one of the most beautiful winter treks in India, located in the Govind Wildlife Sanctuary. The trek rewards you with stunning views of Swargarohini, Bandarpoonch, Kalanag, Ranglana, and several other Himalayan giants from its summit.',
+    highlights: [
+      'Summit panorama of 13 Himalayan peaks',
+      'Spectacular snow-covered pine forests',
+      'Four beautiful campsite meadows',
+      'Perfect introduction to winter trekking',
+      'Traditional Himalayan villages en route'
+    ],
+    images: [{ url: '/images/treks/kedarkantha.jpg', caption: 'Kedarkantha summit in winter' }],
+    bestSeason: ['November', 'December', 'January', 'February', 'March', 'April'],
+    elevationProfile: [
+      { km: 0, altM: 2400 }, { km: 4, altM: 2700 }, { km: 9, altM: 3100 },
+      { km: 14, altM: 3400 }, { km: 18, altM: 3700 }, { km: 21, altM: 3950 },
+      { km: 26, altM: 3100 }, { km: 30, altM: 2400 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Dehradun to Sankri', description: 'Drive through Mussoorie and the scenic Yamuna valley to Sankri village, your base camp.', campAltitude: 1920 },
+      { day: 2, title: 'Sankri to Juda Ka Talab', description: 'Trek through dense pine and oak forests, emerging at the serene Juda Ka Talab lake.', campAltitude: 2740 },
+      { day: 3, title: 'Juda Ka Talab to Kedarkantha Base', description: 'Short trek to base camp with spectacular views of the surrounding snow-capped peaks.', campAltitude: 3500 },
+      { day: 4, title: 'Summit Day & Return to Sankri', description: 'Early morning summit push at 4 AM, witnessing a breathtaking sunrise. Descend to Sankri.', campAltitude: 1920 },
+      { day: 5, title: 'Sankri to Dehradun', description: 'Drive back through the mountains, returning to Dehradun by evening.', campAltitude: 0 }
+    ],
+    inclusions: ['Accommodation (camping/guesthouse)', 'All meals on trek', 'Expert trek leader', 'Safety equipment', 'Forest permits', 'First aid kit'],
+    exclusions: ['Travel to Dehradun', 'Personal gear', 'Travel insurance', 'Tips'],
+    avgRating: 4.8,
+  },
+  {
+    _id: '2',
+    slug: 'valley-of-flowers',
+    name: 'Valley of Flowers',
+    region: 'Uttarakhand',
+    state: 'Uttarakhand',
+    difficulty: 'Easy',
+    duration: 6,
+    maxAltitude: 3658,
+    maxAltitudeFt: 12000,
+    price: 9000,
+    featured: true,
+    shortDesc: 'UNESCO World Heritage Site bursting with 500+ species of wildflowers, surrounded by Himalayan peaks.',
+    description: 'The Valley of Flowers National Park, a UNESCO World Heritage Site, is a high-altitude Himalayan valley covered in alpine flowers of unimaginable variety. The valley blooms from July to September with over 500 species of wildflowers.',
+    highlights: [
+      'UNESCO World Heritage Site',
+      '500+ species of wildflowers',
+      'Pristine Himalayan meadows',
+      'Hem Kund Sahib nearby',
+      'Rich wildlife including Snow Leopard'
+    ],
+    images: [{ url: '/images/treks/valley-of-flowers.jpg', caption: 'Valley of Flowers in full bloom' }],
+    bestSeason: ['July', 'August', 'September'],
+    elevationProfile: [
+      { km: 0, altM: 1800 }, { km: 5, altM: 2200 }, { km: 10, altM: 2600 },
+      { km: 15, altM: 3000 }, { km: 19, altM: 3200 }, { km: 22, altM: 3658 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Rishikesh to Govindghat', description: 'Scenic drive through Devprayag and Joshimath to Govindghat.', campAltitude: 1828 },
+      { day: 2, title: 'Govindghat to Ghangaria', description: 'Trek through lush Himalayan forest alongside the Pushpawati river.', campAltitude: 3050 },
+      { day: 3, title: 'Valley of Flowers Exploration', description: 'Full day exploring the breathtaking valley carpet of wildflowers.', campAltitude: 3050 },
+      { day: 4, title: 'Hem Kund Sahib & Return to Ghangaria', description: 'Visit the sacred Sikh shrine at 4329m, surrounded by seven snow peaks.', campAltitude: 3050 },
+      { day: 5, title: 'Ghangaria to Govindghat & Return', description: 'Descend to Govindghat and drive back to Rishikesh.', campAltitude: 1828 }
+    ],
+    inclusions: ['Accommodation', 'All meals on trek', 'Certified guide', 'National Park permit', 'Safety equipment'],
+    exclusions: ['Travel to Rishikesh', 'Personal expenses', 'Travel insurance'],
+    avgRating: 4.9,
+  },
+  {
+    _id: '3',
+    slug: 'hampta-pass',
+    name: 'Hampta Pass',
+    region: 'Himachal Pradesh',
+    state: 'Himachal Pradesh',
+    difficulty: 'Moderate',
+    duration: 5,
+    maxAltitude: 4270,
+    maxAltitudeFt: 14009,
+    price: 12000,
+    featured: true,
+    shortDesc: 'A dramatic crossover trek from the lush green Kullu valley to the stark moon landscape of Lahaul.',
+    description: 'Hampta Pass offers one of the most dramatic contrasts in Himachal Pradesh — transitioning from the lush, green Kullu valley to the stark, arid moonscapes of Lahaul. The crossing at 4270m offers jaw-dropping views.',
+    highlights: [
+      'Stunning contrast of Kullu & Lahaul valleys',
+      'Chandratal Lake day trip option',
+      'Challenging yet achievable river crossings',
+      'Views of Deo Tibba and Indrasan peaks',
+      'Stark beauty of Lahaul moonscapes'
+    ],
+    images: [{ url: '/images/treks/hampta-pass.jpg', caption: 'Trekkers crossing the boulder field' }],
+    bestSeason: ['June', 'July', 'August', 'September'],
+    elevationProfile: [
+      { km: 0, altM: 2480 }, { km: 4, altM: 2800 }, { km: 8, altM: 3100 },
+      { km: 13, altM: 3600 }, { km: 17, altM: 4270 }, { km: 22, altM: 3700 },
+      { km: 27, altM: 3200 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Manali to Chika', description: 'Drive to Jobra, then trek through dense deodar forests to Chika meadow.', campAltitude: 3100 },
+      { day: 2, title: 'Chika to Balu Ka Ghera', description: 'Gradual climb through open meadows with views of Deo Tibba.', campAltitude: 3636 },
+      { day: 3, title: 'Balu Ka Ghera to Shea Goru via Pass', description: 'Cross Hampta Pass (4270m) and descend into the spectacular Lahaul valley.', campAltitude: 3900 },
+      { day: 4, title: 'Shea Goru to Chatru & Return', description: 'Descend to Chatru and drive to Manali, passing Chandratal Lake.', campAltitude: 0 }
+    ],
+    inclusions: ['Camping accommodation', 'All meals', 'Trek leader', 'Permits', 'Safety equipment'],
+    exclusions: ['Travel to Manali', 'Personal expenses', 'Chandratal Lake visit (optional)'],
+    avgRating: 4.7,
+  },
+  {
+    _id: '4',
+    slug: 'rupin-pass',
+    name: 'Rupin Pass',
+    region: 'Uttarakhand',
+    state: 'Uttarakhand',
+    difficulty: 'Moderate',
+    duration: 8,
+    maxAltitude: 4650,
+    maxAltitudeFt: 15300,
+    price: 14000,
+    featured: false,
+    shortDesc: 'One of India\'s most beautiful treks, featuring a dramatic snow wall and a stunning waterfall cascade.',
+    description: 'Rupin Pass trek is rated one of the most beautiful treks in India. Its defining feature is the dramatic Rupin waterfall that cascades from snow-covered heights, and the iconic snow wall ascent to the pass at 4650m.',
+    highlights: [
+      'Iconic Rupin waterfall cascade',
+      'Dramatic snow wall ascent',
+      'Ancient hanging villages',
+      'Unspoilt meadows and pine forests',
+      'Stunning Himalayan panoramas'
+    ],
+    images: [{ url: '/images/treks/rupin-pass.jpg', caption: 'The famous Rupin Pass snow wall' }],
+    bestSeason: ['May', 'June', 'September', 'October'],
+    elevationProfile: [
+      { km: 0, altM: 1525 }, { km: 6, altM: 2100 }, { km: 12, altM: 2500 },
+      { km: 18, altM: 3100 }, { km: 23, altM: 3600 }, { km: 28, altM: 4200 },
+      { km: 31, altM: 4650 }, { km: 37, altM: 3800 }, { km: 43, altM: 3200 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Dhaula to Sewa', description: 'Drive to Dhaula and trek to Sewa village through terraced fields.', campAltitude: 1690 },
+      { day: 2, title: 'Sewa to Jiskun', description: 'Trek through Rupin gorge with stunning views of the waterfall.', campAltitude: 2100 },
+      { day: 3, title: 'Jiskun to Udaknal', description: 'Dramatic section with the Rupin waterfall in full view.', campAltitude: 2600 },
+      { day: 4, title: 'Udaknal to Upper Waterfall Camp', description: 'Trek past the Rupin falls to camp below the snow bowl.', campAltitude: 3500 },
+      { day: 5, title: 'Upper Waterfall to Snow Bridge', description: 'Traverse the iconic snow wall to reach the snow bridge camp.', campAltitude: 4100 },
+      { day: 6, title: 'Snow Bridge to Pass to Ronti Gad', description: 'Cross Rupin Pass (4650m) and descend to Ronti Gad.', campAltitude: 3500 },
+      { day: 7, title: 'Ronti Gad to Sangla', description: 'Descend through beautiful Sangla valley forests to Sangla village.', campAltitude: 2680 }
+    ],
+    inclusions: ['All camping accommodation', 'Meals on trek', 'Expert guide', 'Permits & fees', 'Safety gear'],
+    exclusions: ['Travel to Dhaula', 'Personal trekking gear', 'Insurance'],
+    avgRating: 4.8,
+  },
+  {
+    _id: '5',
+    slug: 'roopkund',
+    name: 'Roopkund',
+    region: 'Uttarakhand',
+    state: 'Uttarakhand',
+    difficulty: 'Hard',
+    duration: 8,
+    maxAltitude: 5029,
+    maxAltitudeFt: 16499,
+    price: 16500,
+    featured: false,
+    shortDesc: 'The Skeleton Lake — a mysterious glacial lake at 5029m surrounded by ancient human skeletal remains.',
+    description: 'Roopkund, also known as the Mystery Lake or Skeleton Lake, lies hidden in the Trishul massif at 5029m. The lake contains hundreds of ancient human skeletons on its edge, adding an eerie mystique to an already dramatic high-altitude trek.',
+    highlights: [
+      'The mysterious Skeleton Lake at 5029m',
+      'Views of Trishul and Nanda Ghunti',
+      'Ancient bugyal (meadow) at Ali Bugyal',
+      'Oak and rhododendron forests',
+      'One of India\'s most dramatic treks'
+    ],
+    images: [{ url: '/images/treks/roopkund.jpg', caption: 'The eerie Roopkund lake surrounded by snow' }],
+    bestSeason: ['May', 'June', 'September', 'October'],
+    elevationProfile: [
+      { km: 0, altM: 2200 }, { km: 7, altM: 2600 }, { km: 13, altM: 3100 },
+      { km: 18, altM: 3550 }, { km: 22, altM: 4000 }, { km: 27, altM: 4500 },
+      { km: 30, altM: 5029 }, { km: 37, altM: 3100 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Lohajung to Didna Village', description: 'Trek through terraced fields and oak forests to Didna village.', campAltitude: 2640 },
+      { day: 2, title: 'Didna to Ali Bugyal', description: 'Steep climb through rhododendron forests to the vast Ali Bugyal meadow.', campAltitude: 3612 },
+      { day: 3, title: 'Ali Bugyal to Bedni Bugyal', description: 'Trek across beautiful high altitude meadows with Trishul dominating the skyline.', campAltitude: 3354 },
+      { day: 4, title: 'Bedni to Pathar Nachauni', description: 'Gradual ascent through increasingly barren landscape.', campAltitude: 4235 },
+      { day: 5, title: 'Pathar Nachauni to Bhagwabasa', description: 'Trek to high camp at the base of the final push to Roopkund.', campAltitude: 4780 },
+      { day: 6, title: 'Roopkund Summit & Return to Bedni', description: 'Early morning push to Roopkund lake, then long descent back to Bedni.', campAltitude: 3354 },
+      { day: 7, title: 'Bedni Bugyal to Lohajung', description: 'Final descent back to Lohajung through dense forests.', campAltitude: 2270 }
+    ],
+    inclusions: ['All accommodation', 'Meals', 'Certified high-altitude guide', 'All permits', 'Safety & first aid'],
+    exclusions: ['Transport to Lohajung', 'Personal gear', 'Altitude sickness medication', 'Insurance'],
+    avgRating: 4.6,
+  },
+  {
+    _id: '6',
+    slug: 'goechala',
+    name: 'Goechala',
+    region: 'Sikkim',
+    state: 'Sikkim',
+    difficulty: 'Hard',
+    duration: 11,
+    maxAltitude: 4940,
+    maxAltitudeFt: 16207,
+    price: 22000,
+    featured: false,
+    shortDesc: 'Closest view of Kangchenjunga — the world\'s third highest peak — from Goechala in Sikkim.',
+    description: 'The Goechala trek in Sikkim offers the closest accessible viewpoint of Kangchenjunga (8586m), the world\'s third-highest mountain. Trekking through the Kanchenjunga National Park, the trail passes through diverse ecosystems and ancient monasteries.',
+    highlights: [
+      'Closest view of Kangchenjunga (8586m)',
+      'Stunning high-altitude lakes',
+      'Ancient Buddhist monasteries',
+      'Diverse ecosystems from subtropical to alpine',
+      'Rich wildlife — Red Panda, Himalayan Black Bear'
+    ],
+    images: [{ url: '/images/treks/goechala.jpg', caption: 'Kangchenjunga at sunrise from Goechala' }],
+    bestSeason: ['April', 'May', 'October', 'November'],
+    elevationProfile: [
+      { km: 0, altM: 1800 }, { km: 8, altM: 2200 }, { km: 15, altM: 2700 },
+      { km: 22, altM: 3300 }, { km: 30, altM: 3900 }, { km: 37, altM: 4400 },
+      { km: 40, altM: 4940 }, { km: 48, altM: 3300 }, { km: 55, altM: 1800 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Yuksom to Sachen', description: 'Trek from the historic capital of Sikkim through forest to Sachen.', campAltitude: 2400 },
+      { day: 2, title: 'Sachen to Tshoka', description: 'Steep climb through rhododendron and magnolia forest.', campAltitude: 3050 },
+      { day: 3, title: 'Tshoka to Dzongri', description: 'Dramatic landscape opens up with first views of Kanchenjunga.', campAltitude: 4030 },
+      { day: 4, title: 'Dzongri Top Sunrise & Onward to Thansing', description: 'Pre-dawn hike for sunrise views, then descent to Thansing.', campAltitude: 3930 },
+      { day: 5, title: 'Thansing to Samiti Lake', description: 'High altitude lake with crystal reflections of surrounding peaks.', campAltitude: 4200 },
+      { day: 6, title: 'Samiti Lake to Goechala & Return', description: 'The triumphant push to Goechala viewpoint at 4940m.', campAltitude: 4200 },
+      { day: 7, title: 'Return Journey Begins — Samiti to Kokchurung', description: 'Begin the long descent back through the wilderness.', campAltitude: 3860 },
+      { day: 8, title: 'Kokchurung to Tshoka', description: 'Trek back through the magical rhododendron forests.', campAltitude: 3050 },
+      { day: 9, title: 'Tshoka to Yuksom', description: 'Final descent back to the trailhead at Yuksom.', campAltitude: 1780 }
+    ],
+    inclusions: ['All accommodation', 'Meals', 'Permits (national park)', 'Guide & porters', 'Safety equipment'],
+    exclusions: ['Flights/travel to Bagdogra', 'Inner Line Permit', 'Personal expenses', 'Insurance'],
+    avgRating: 4.9,
+  },
+  {
+    _id: '7',
+    slug: 'chadar-trek',
+    name: 'Chadar Trek',
+    region: 'Ladakh',
+    state: 'Ladakh',
+    difficulty: 'Extreme',
+    duration: 9,
+    maxAltitude: 3400,
+    maxAltitudeFt: 11155,
+    price: 24000,
+    featured: false,
+    shortDesc: 'Walk on the frozen Zanskar river through dramatic ice canyons in temperatures of -25°C.',
+    description: 'The Chadar Trek is one of India\'s most dramatic winter expeditions — walking on the frozen Zanskar river (chadar means "sheet" in Hindi) through narrow gorges with towering frozen waterfalls, at temperatures that plunge to -25°C.',
+    highlights: [
+      'Walk on a frozen river at -25°C',
+      'Dramatic ice canyon formations',
+      'Frozen waterfalls up to 40m high',
+      'Authentic Ladakhi cave camping',
+      'Complete disconnection from civilization'
+    ],
+    images: [{ url: '/images/treks/chadar.jpg', caption: 'Trekkers on the frozen Zanskar river' }],
+    bestSeason: ['January', 'February'],
+    elevationProfile: [
+      { km: 0, altM: 3050 }, { km: 5, altM: 3100 }, { km: 12, altM: 3150 },
+      { km: 19, altM: 3200 }, { km: 26, altM: 3250 }, { km: 33, altM: 3300 },
+      { km: 40, altM: 3400 }, { km: 46, altM: 3350 }, { km: 52, altM: 3050 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Leh Acclimatization', description: 'Arrive Leh (3500m). Mandatory acclimatization day — gentle sightseeing.', campAltitude: 3500 },
+      { day: 2, title: 'Leh Acclimatization & Gear Check', description: 'Full gear check, briefing, and second acclimatization day.', campAltitude: 3500 },
+      { day: 3, title: 'Chilling to Tilat Sumdo', description: 'First day on the frozen Zanskar. Camp in a cave at Tilat Sumdo.', campAltitude: 3100 },
+      { day: 4, title: 'Tilat Sumdo to Gyalpo', description: 'Trek through the dramatic Zanskar gorge canyon.', campAltitude: 3200 },
+      { day: 5, title: 'Gyalpo to Tibb Cave', description: 'The most spectacular section with massive frozen waterfalls.', campAltitude: 3300 },
+      { day: 6, title: 'Tibb Cave to Naerak', description: 'Reach Naerak, the turnaround point at 3400m.', campAltitude: 3400 },
+      { day: 7, title: 'Naerak to Tibb Cave (Return)', description: 'Begin the return journey on the frozen river.', campAltitude: 3300 },
+      { day: 8, title: 'Tibb Cave to Chilling', description: 'Final push back to Chilling and drive to Leh.', campAltitude: 3500 }
+    ],
+    inclusions: ['All accommodation (caves/camps)', 'All meals', 'Expert Chadar guide', 'All permits', 'Emergency evacuation protocol', 'Crampons (rental)'],
+    exclusions: ['Flights to Leh', 'Personal cold-weather gear', 'Travel insurance (mandatory)', 'Altitude sickness medication'],
+    avgRating: 4.7,
+  },
+  {
+    _id: '8',
+    slug: 'pin-parvati-pass',
+    name: 'Pin Parvati Pass',
+    region: 'Himachal Pradesh',
+    state: 'Himachal Pradesh',
+    difficulty: 'Extreme',
+    duration: 11,
+    maxAltitude: 5319,
+    maxAltitudeFt: 17451,
+    price: 28000,
+    featured: false,
+    shortDesc: 'One of India\'s most challenging crossover treks — from the lush Parvati valley to the barren Pin valley.',
+    description: 'Pin Parvati Pass is among the most challenging and remote treks in India. The crossing at 5319m connects the verdant Parvati valley in Kullu to the cold desert of Pin valley in Spiti — a journey through two completely different worlds.',
+    highlights: [
+      'Crossing at 5319m — highly technical',
+      'Transition from Kullu green to Spiti desert',
+      'Glacier crossing experience',
+      'Complete wilderness — no mobile network',
+      'Views across Spiti, Kinnaur and Kullu Himalayas'
+    ],
+    images: [{ url: '/images/treks/pin-parvati.jpg', caption: 'The glaciated Pin Parvati Pass crossing' }],
+    bestSeason: ['July', 'August', 'September'],
+    elevationProfile: [
+      { km: 0, altM: 2050 }, { km: 8, altM: 2600 }, { km: 16, altM: 3200 },
+      { km: 23, altM: 3800 }, { km: 30, altM: 4400 }, { km: 36, altM: 4900 },
+      { km: 39, altM: 5319 }, { km: 46, altM: 4200 }, { km: 54, altM: 3500 },
+      { km: 62, altM: 2980 }
+    ],
+    itinerary: [
+      { day: 1, title: 'Barsheni to Kalga', description: 'Trek from road end at Barsheni through forest to Kalga village.', campAltitude: 2440 },
+      { day: 2, title: 'Kalga to Tunda Bhuj', description: 'Trek along the Parvati river gorge through thick forest.', campAltitude: 2800 },
+      { day: 3, title: 'Tunda Bhuj to Odi Thach', description: 'Landscape opens up, river crossings begin.', campAltitude: 3300 },
+      { day: 4, title: 'Odi Thach to Thakur Kuan', description: 'High camp below the glacier zone.', campAltitude: 3900 },
+      { day: 5, title: 'Thakur Kuan to Mantalai Lake', description: 'Sacred lake at 4150m, source of the Parvati river.', campAltitude: 4150 },
+      { day: 6, title: 'Mantalai to Base of Pass', description: 'Technical glacier approach to high camp below the pass.', campAltitude: 4750 },
+      { day: 7, title: 'Cross Pin Parvati Pass (5319m)', description: 'Summit day — cross the glaciated pass into the Pin valley.', campAltitude: 4500 },
+      { day: 8, title: 'Descent through Pin Valley', description: 'Dramatic descent through Spiti moonscape to Pin valley.', campAltitude: 3800 },
+      { day: 9, title: 'Continue Descent — Mud Village', description: 'Trek to Mud village, the first settlement in Pin valley.', campAltitude: 3690 },
+      { day: 10, title: 'Mud to Kaza', description: 'Drive through the stunning Pin valley to Kaza, Spiti headquarters.', campAltitude: 3800 }
+    ],
+    inclusions: ['All accommodation', 'All meals', 'Expert high-altitude guide', 'All permits', 'Technical gear', 'Emergency protocol'],
+    exclusions: ['Travel to Barsheni / from Kaza', 'Personal technical gear (ice axe, crampons)', 'Comprehensive travel insurance (mandatory)'],
+    avgRating: 4.8,
+  }
+];
+
+export const TREKS_MAP = Object.fromEntries(TREKS.map(t => [t.slug, t]));
+
+export const FEATURED_TREKS = TREKS.filter(t => t.featured);

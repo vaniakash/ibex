@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" fill="none">
+  <!-- Ibex horn silhouette - sweeping curved horn shape -->
+  <path d="M16 38 C14 34 10 28 8 22 C6 16 7 10 10 6 C12 3 15 2 17 2 C20 2 22 4 22 7 C22 10 20 12 18 13 C16 14 15 15 15 17 C15 19 16 20 17 21 C19 23 20 25 19 28 C18 31 17 35 16 38Z" fill="currentColor" opacity="0.9"/>
+  <path d="M17 2 C20 1 24 3 26 7 C28 11 27 16 24 19 C22 21 20 22 19 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+</svg>
