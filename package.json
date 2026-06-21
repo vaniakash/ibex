@@ -1,7 +1,0 @@
-{
-  "name": "ibex-monorepo",
-  "private": true,
-  "scripts": {
-    "vercel-build": "cd client && npm install && npm run build"
-  }
-}
