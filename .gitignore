@@ -25,3 +25,6 @@ yarn-error.log*
 
 # Mac
 .DS_Store
+
+# Temporary ignore for deployment
+server/
